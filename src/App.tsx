@@ -12,4 +12,6 @@ export default function App() {
 const StAppWrapper=styled.section`
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `
