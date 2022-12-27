@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MessageList from './pages/MessageList';
+import Message from './pages/MessageContainer';
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MessageList/>} />
+        <Route path="/" element={<Message/>} />
       </Routes>
     </BrowserRouter>
   );
