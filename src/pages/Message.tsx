@@ -1,13 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Header from '../components/common/Header';
-
-interface List {
-    writer: string;
-    message: string;
-    password: string;
-    hint: string;
-}
+import { List } from '../types/common';
 
 export default function MessageList() {
     const [messages, setMessages] = useState<List[]>([]);

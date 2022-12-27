@@ -1,12 +1,6 @@
 import { DefaultBodyType, rest } from "msw";
 import messageList from "./dummy.json";
-
-interface List {
-    writer: string;
-    message: string;
-    password: string;
-    hint: string;
-}
+import { List } from '../types/common';
 
 export const handlers = [
     rest.get("/letters", async (req, res, ctx) => {
