@@ -1,15 +1,12 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { List } from 'types/common';
 import Header from './common/Header';
 
 export default function MessageGet() {
     const [messages, setMessages] = useState<List[]>([]);
-    const [isClicked, setIsClicked] = useState<boolean>(false);
-    const [writer, setWriter]=useState("");
-    const [message, setMessage] = useState("");
-    const [password, setPassword]=useState("");
-    const [hint, setHint]=useState("");
+    const navigate=useNavigate();
 
     const getData = async () => {
         try {
@@ -30,8 +27,10 @@ export default function MessageGet() {
         getData();
     }, []);
 
+
     const handleClick=()=>{
-        setIsClicked((prev)=>!prev)
+        // setIsClicked((prev)=>!prev)
+        navigate("/post")
     }
 
 
