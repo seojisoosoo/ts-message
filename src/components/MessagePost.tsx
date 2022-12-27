@@ -50,7 +50,6 @@ export default function MessageForm() {
     
   return (
     <>
-    <Header/>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="글쓴이" onChange={({ target: { value } }) => setWriter(value)}/>
         <input type="text" placeholder='메시지 내용' onChange={({ target: { value } }) => setMessage(value)}/>

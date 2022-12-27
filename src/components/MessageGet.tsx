@@ -1,12 +1,11 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
 import { List } from 'types/common';
 import Header from './common/Header';
 
 export default function MessageGet() {
     const [messages, setMessages] = useState<List[]>([]);
-    const navigate=useNavigate();
+    // const navigate=useNavigate();
 
     const getData = async () => {
         try {
@@ -30,13 +29,12 @@ export default function MessageGet() {
 
     const handleClick=()=>{
         // setIsClicked((prev)=>!prev)
-        navigate("/post")
+        // navigate("/post")
     }
 
 
   return (
     <>
-        <Header/>
         {/* {isClicked&&<MessageForm/>} */}
         <button type='button' onClick={handleClick}>글쓰기</button>
         {messages.map(({writer, message},i) => (
