@@ -42,25 +42,19 @@ export default function MessageList() {
         console.log("ddfdfdf")
         console.log(formData)
 
-        fetch("/letters", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            // body: formData,
-            body:JSON.stringify({
+        axios.post("/letters", 
+            {
               "writer": writer,
               "message": message,
               "password": password,
               "hint": hint     
-            })
-          }).then((res) => {
+            }
+          ).then((res) => {
             console.log(res)
-            fetch("/letters")
-              .then((res) => res.json())
-              .then((data) => {
+            axios.get("/letters")
+              .then((res) => {
                 setMessage("")
-                setMessages(data);
+                setMessages(res.data);
               });
           });
       };
