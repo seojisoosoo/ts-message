@@ -1,8 +1,8 @@
 [
-    {"writer": "지수", "message": "고생했어", "password":"1111", "hint":"1111"},
-    {"writer": "우영", "message": "안녕", "password":"1111", "hint":"1111"},
-    {"writer": "하윤", "message": "하이", "password":"1111", "hint":"1111"},
-    {"writer": "재욱", "message": "헬로우", "password":"1111", "hint":"1111"},
-    {"writer": "주함", "message": "팟짱", "password":"1111", "hint":"1111"},
-    {"writer": "타스형", "message": "왜 이렇게 힘들어", "password":"1111", "hint":"1111"}
+    {"writer": "지수", "message": "고생했어", "password":"1111", "hint":"1 4번 입력"},
+    {"writer": "우영", "message": "안녕", "password":"2222", "hint":"2 4번 입력"},
+    {"writer": "하윤", "message": "하이", "password":"1234", "hint":"1234"},
+    {"writer": "재욱", "message": "헬로우", "password":"hello", "hint":"영어로 안녕"},
+    {"writer": "주함", "message": "팟짱", "password":"web", "hint":"웹"},
+    {"writer": "타스형", "message": "왜 이렇게 힘들어", "password":"typescript", "hint":"이거 언어"}
 ]
