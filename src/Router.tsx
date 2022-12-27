@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Message from './pages/Message';
+import Message from './pages/MessageContainer';
 
 export default function Router() {
   return (

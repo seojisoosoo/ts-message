@@ -4,3 +4,8 @@ export interface List {
     password: string;
     hint: string;
 }
+
+export interface SecretList{
+    hint:string; 
+    password:string
+}
