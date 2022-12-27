@@ -1,4 +1,4 @@
-import { DefaultBodyType, rest } from "msw";
+import { rest } from "msw";
 import messageList from "./dummy.json";
 import { List } from '../types/common';
 
@@ -10,14 +10,6 @@ export const handlers = [
     }),
     rest.post<List>("/letters", async (req, res, ctx) => {
         await sleep(200);
-        // const { writer, message, password, hint} = await req.json()
-        // console.log(writer)
-        // messageList.push({
-        //     writer,
-        //     message,
-        //     password,
-        //     hint,
-        // });
         messageList.push(await req.json())
         console.log(messageList)
         return res(ctx.status(201), ctx.json(messageList));
